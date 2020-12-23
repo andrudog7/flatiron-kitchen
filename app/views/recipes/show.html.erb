@@ -1,0 +1,10 @@
+<h1><%=@recipe.name%></h1>
+<h2>Ingredients:</h2>
+<ul>
+    <%@recipe.ingredients.each do |ing|%>
+    <%binding.pry%>
+    <li>
+        <%=ing.name%>
+    </li>
+    <%end%>
+</ul>
